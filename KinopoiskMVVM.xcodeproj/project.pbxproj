@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84B7A1AD28ADE830009B1868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7A1AC28ADE830009B1868 /* AppDelegate.swift */; };
+		84B7A1AF28ADE830009B1868 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7A1AE28ADE830009B1868 /* SceneDelegate.swift */; };
+		84B7A1B628ADE832009B1868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B7A1B528ADE832009B1868 /* Assets.xcassets */; };
+		84B7A1B928ADE832009B1868 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B7A1B728ADE832009B1868 /* LaunchScreen.storyboard */; };
+		84B7A1C528ADE9B2009B1868 /* TopFilmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7A1C428ADE9B2009B1868 /* TopFilmsViewController.swift */; };
+		84B7A1C728ADE9D6009B1868 /* TopFilmsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7A1C628ADE9D5009B1868 /* TopFilmsView.swift */; };
+		84B7A1C928ADE9F9009B1868 /* TopFilmsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7A1C828ADE9F9009B1868 /* TopFilmsTableViewCell.swift */; };
+		84B7A1CB28ADEA17009B1868 /* TopFilmsControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7A1CA28ADEA17009B1868 /* TopFilmsControllerDelegate.swift */; };
+		84B7A1CD28ADEA67009B1868 /* TopFilmsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7A1CC28ADEA67009B1868 /* TopFilmsDataProvider.swift */; };
+		84B7A1CF28ADEA87009B1868 /* FilmsNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7A1CE28ADEA87009B1868 /* FilmsNetworkService.swift */; };
+		84B7A1D128ADEAA3009B1868 /* FilmsDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7A1D028ADEAA3009B1868 /* FilmsDataStorage.swift */; };
+		84B7A1D328ADEABD009B1868 /* FilmsNetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7A1D228ADEABD009B1868 /* FilmsNetworkServiceProtocol.swift */; };
+		84B7A1D528ADEAD6009B1868 /* FilmsDataStorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7A1D428ADEAD6009B1868 /* FilmsDataStorageProtocol.swift */; };
+		84B7A1D728ADEAF2009B1868 /* TopFilmsDataProvidingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7A1D628ADEAF2009B1868 /* TopFilmsDataProvidingProtocol.swift */; };
+		84B7A1D928ADEB11009B1868 /* TopFilmsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7A1D828ADEB11009B1868 /* TopFilmsDataModel.swift */; };
+		84B7A1DB28ADEB6E009B1868 /* TopFilmsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7A1DA28ADEB6E009B1868 /* TopFilmsViewModel.swift */; };
+		84B7A1DD28ADF521009B1868 /* TopFilmsDataPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7A1DC28ADF521009B1868 /* TopFilmsDataPresentable.swift */; };
+		84B7A1E028ADF59A009B1868 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7A1DF28ADF59A009B1868 /* ModuleBuilder.swift */; };
+		A38C61FAC3D58286411D04FA /* Pods_KinopoiskMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819805888F56BFEF868D48D0 /* Pods_KinopoiskMVVM.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6534530C3137FFD9D83C0D3E /* Pods-KinopoiskMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinopoiskMVVM.release.xcconfig"; path = "Target Support Files/Pods-KinopoiskMVVM/Pods-KinopoiskMVVM.release.xcconfig"; sourceTree = "<group>"; };
+		819805888F56BFEF868D48D0 /* Pods_KinopoiskMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KinopoiskMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B7A1A928ADE830009B1868 /* KinopoiskMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinopoiskMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B7A1AC28ADE830009B1868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84B7A1AE28ADE830009B1868 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		84B7A1B528ADE832009B1868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84B7A1B828ADE832009B1868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84B7A1BA28ADE832009B1868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B7A1C428ADE9B2009B1868 /* TopFilmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopFilmsViewController.swift; sourceTree = "<group>"; };
+		84B7A1C628ADE9D5009B1868 /* TopFilmsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopFilmsView.swift; sourceTree = "<group>"; };
+		84B7A1C828ADE9F9009B1868 /* TopFilmsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopFilmsTableViewCell.swift; sourceTree = "<group>"; };
+		84B7A1CA28ADEA17009B1868 /* TopFilmsControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopFilmsControllerDelegate.swift; sourceTree = "<group>"; };
+		84B7A1CC28ADEA67009B1868 /* TopFilmsDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopFilmsDataProvider.swift; sourceTree = "<group>"; };
+		84B7A1CE28ADEA87009B1868 /* FilmsNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsNetworkService.swift; sourceTree = "<group>"; };
+		84B7A1D028ADEAA3009B1868 /* FilmsDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsDataStorage.swift; sourceTree = "<group>"; };
+		84B7A1D228ADEABD009B1868 /* FilmsNetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsNetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		84B7A1D428ADEAD6009B1868 /* FilmsDataStorageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsDataStorageProtocol.swift; sourceTree = "<group>"; };
+		84B7A1D628ADEAF2009B1868 /* TopFilmsDataProvidingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopFilmsDataProvidingProtocol.swift; sourceTree = "<group>"; };
+		84B7A1D828ADEB11009B1868 /* TopFilmsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopFilmsDataModel.swift; sourceTree = "<group>"; };
+		84B7A1DA28ADEB6E009B1868 /* TopFilmsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopFilmsViewModel.swift; sourceTree = "<group>"; };
+		84B7A1DC28ADF521009B1868 /* TopFilmsDataPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopFilmsDataPresentable.swift; sourceTree = "<group>"; };
+		84B7A1DF28ADF59A009B1868 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		8F4FF0B21B302CCEB6213F5E /* Pods-KinopoiskMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinopoiskMVVM.debug.xcconfig"; path = "Target Support Files/Pods-KinopoiskMVVM/Pods-KinopoiskMVVM.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84B7A1A628ADE830009B1868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A38C61FAC3D58286411D04FA /* Pods_KinopoiskMVVM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82F40314991411CA2BE97BF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				819805888F56BFEF868D48D0 /* Pods_KinopoiskMVVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84B7A1A028ADE830009B1868 = {
+			isa = PBXGroup;
+			children = (
+				84B7A1AB28ADE830009B1868 /* KinopoiskMVVM */,
+				84B7A1AA28ADE830009B1868 /* Products */,
+				966DA80D26D2C275B9EC1B88 /* Pods */,
+				82F40314991411CA2BE97BF0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84B7A1AA28ADE830009B1868 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84B7A1A928ADE830009B1868 /* KinopoiskMVVM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84B7A1AB28ADE830009B1868 /* KinopoiskMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				84B7A1C328ADE921009B1868 /* TopFilmsScreen */,
+				84B7A1AC28ADE830009B1868 /* AppDelegate.swift */,
+				84B7A1AE28ADE830009B1868 /* SceneDelegate.swift */,
+				84B7A1B528ADE832009B1868 /* Assets.xcassets */,
+				84B7A1B728ADE832009B1868 /* LaunchScreen.storyboard */,
+				84B7A1BA28ADE832009B1868 /* Info.plist */,
+			);
+			path = KinopoiskMVVM;
+			sourceTree = "<group>";
+		};
+		84B7A1C028ADE900009B1868 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84B7A1CC28ADEA67009B1868 /* TopFilmsDataProvider.swift */,
+				84B7A1CE28ADEA87009B1868 /* FilmsNetworkService.swift */,
+				84B7A1D028ADEAA3009B1868 /* FilmsDataStorage.swift */,
+				84B7A1D228ADEABD009B1868 /* FilmsNetworkServiceProtocol.swift */,
+				84B7A1D428ADEAD6009B1868 /* FilmsDataStorageProtocol.swift */,
+				84B7A1D628ADEAF2009B1868 /* TopFilmsDataProvidingProtocol.swift */,
+				84B7A1D828ADEB11009B1868 /* TopFilmsDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84B7A1C128ADE908009B1868 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84B7A1C428ADE9B2009B1868 /* TopFilmsViewController.swift */,
+				84B7A1C628ADE9D5009B1868 /* TopFilmsView.swift */,
+				84B7A1C828ADE9F9009B1868 /* TopFilmsTableViewCell.swift */,
+				84B7A1CA28ADEA17009B1868 /* TopFilmsControllerDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84B7A1C228ADE90E009B1868 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84B7A1DA28ADEB6E009B1868 /* TopFilmsViewModel.swift */,
+				84B7A1DC28ADF521009B1868 /* TopFilmsDataPresentable.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84B7A1C328ADE921009B1868 /* TopFilmsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				84B7A1DE28ADF589009B1868 /* Builder */,
+				84B7A1C128ADE908009B1868 /* View */,
+				84B7A1C228ADE90E009B1868 /* ViewModel */,
+				84B7A1C028ADE900009B1868 /* Model */,
+			);
+			path = TopFilmsScreen;
+			sourceTree = "<group>";
+		};
+		84B7A1DE28ADF589009B1868 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				84B7A1DF28ADF59A009B1868 /* ModuleBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		966DA80D26D2C275B9EC1B88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F4FF0B21B302CCEB6213F5E /* Pods-KinopoiskMVVM.debug.xcconfig */,
+				6534530C3137FFD9D83C0D3E /* Pods-KinopoiskMVVM.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84B7A1A828ADE830009B1868 /* KinopoiskMVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B7A1BD28ADE832009B1868 /* Build configuration list for PBXNativeTarget "KinopoiskMVVM" */;
+			buildPhases = (
+				4D570EF15BEA3AB679675BB1 /* [CP] Check Pods Manifest.lock */,
+				84B7A1A528ADE830009B1868 /* Sources */,
+				84B7A1A628ADE830009B1868 /* Frameworks */,
+				84B7A1A728ADE830009B1868 /* Resources */,
+				1BD69761CEF4911F36F43C0F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KinopoiskMVVM;
+			productName = KinopoiskMVVM;
+			productReference = 84B7A1A928ADE830009B1868 /* KinopoiskMVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84B7A1A128ADE830009B1868 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					84B7A1A828ADE830009B1868 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 84B7A1A428ADE830009B1868 /* Build configuration list for PBXProject "KinopoiskMVVM" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84B7A1A028ADE830009B1868;
+			productRefGroup = 84B7A1AA28ADE830009B1868 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84B7A1A828ADE830009B1868 /* KinopoiskMVVM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84B7A1A728ADE830009B1868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B7A1B928ADE832009B1868 /* LaunchScreen.storyboard in Resources */,
+				84B7A1B628ADE832009B1868 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BD69761CEF4911F36F43C0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KinopoiskMVVM/Pods-KinopoiskMVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KinopoiskMVVM/Pods-KinopoiskMVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KinopoiskMVVM/Pods-KinopoiskMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D570EF15BEA3AB679675BB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KinopoiskMVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84B7A1A528ADE830009B1868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B7A1D128ADEAA3009B1868 /* FilmsDataStorage.swift in Sources */,
+				84B7A1DD28ADF521009B1868 /* TopFilmsDataPresentable.swift in Sources */,
+				84B7A1CB28ADEA17009B1868 /* TopFilmsControllerDelegate.swift in Sources */,
+				84B7A1D728ADEAF2009B1868 /* TopFilmsDataProvidingProtocol.swift in Sources */,
+				84B7A1D528ADEAD6009B1868 /* FilmsDataStorageProtocol.swift in Sources */,
+				84B7A1AD28ADE830009B1868 /* AppDelegate.swift in Sources */,
+				84B7A1CF28ADEA87009B1868 /* FilmsNetworkService.swift in Sources */,
+				84B7A1AF28ADE830009B1868 /* SceneDelegate.swift in Sources */,
+				84B7A1C928ADE9F9009B1868 /* TopFilmsTableViewCell.swift in Sources */,
+				84B7A1DB28ADEB6E009B1868 /* TopFilmsViewModel.swift in Sources */,
+				84B7A1C728ADE9D6009B1868 /* TopFilmsView.swift in Sources */,
+				84B7A1E028ADF59A009B1868 /* ModuleBuilder.swift in Sources */,
+				84B7A1C528ADE9B2009B1868 /* TopFilmsViewController.swift in Sources */,
+				84B7A1D928ADEB11009B1868 /* TopFilmsDataModel.swift in Sources */,
+				84B7A1D328ADEABD009B1868 /* FilmsNetworkServiceProtocol.swift in Sources */,
+				84B7A1CD28ADEA67009B1868 /* TopFilmsDataProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84B7A1B728ADE832009B1868 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84B7A1B828ADE832009B1868 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84B7A1BB28ADE832009B1868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84B7A1BC28ADE832009B1868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84B7A1BE28ADE832009B1868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F4FF0B21B302CCEB6213F5E /* Pods-KinopoiskMVVM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8248857XZ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KinopoiskMVVM/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ayaz.KinopoiskMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84B7A1BF28ADE832009B1868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6534530C3137FFD9D83C0D3E /* Pods-KinopoiskMVVM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8248857XZ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KinopoiskMVVM/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ayaz.KinopoiskMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84B7A1A428ADE830009B1868 /* Build configuration list for PBXProject "KinopoiskMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B7A1BB28ADE832009B1868 /* Debug */,
+				84B7A1BC28ADE832009B1868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84B7A1BD28ADE832009B1868 /* Build configuration list for PBXNativeTarget "KinopoiskMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B7A1BE28ADE832009B1868 /* Debug */,
+				84B7A1BF28ADE832009B1868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84B7A1A128ADE830009B1868 /* Project object */;
+}
